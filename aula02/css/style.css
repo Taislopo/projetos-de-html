@@ -1,0 +1,28 @@
+h1
+{ 
+    color:aqua
+}
+
+.cor
+ {
+    color:black
+}
+
+.cores
+{
+    color:green
+}
+p
+{
+    background-color: #ff000f;
+    color:aliceblue;
+  font-size:25px;
+}
+img
+{
+  height:400px;
+  width:400px ;
+  object-fit: contain;
+  background-color: black;
+  border: 10px solid black;
+  border-radius: 15px;}
