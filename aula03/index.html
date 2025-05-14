@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+
+
+<style>
+       .texto
+       {
+             background-color: tomato;
+             color: aliceblue;
+             font-size: 30px;
+       }
+</style>
+
+
+<body>
+    <h1 class="texto">Aula de JS</h1>
+    
+    <p class="texto"id="textoPersonalizado">Aqui vai o meu texto personalizado</p>
+   
+     <!-- class serve para padronizar as tags, id serve para ser unico não ter tag iguais  -->
+
+
+
+    <script>
+        // script usado para quando for usar a linguagem java script 
+
+
+        //console.log serve para registros e verificar se esta tudo certo com o codigo
+        console.log(' Aqui eu tenho um texto top!!')
+        // é possivel usar ambas as aspas ''""
+        numero = 1
+        texto = 'texto'
+        numeroquebrado = 6.8
+        verdadeiroFalso = true
+        // no java não precisa declarar o tipo da variavel
+        
+        console.log(numero, texto, numeroquebrado, verdadeiroFalso)
+        // virgula no comando console.log serve para mostrar outros registros não para contatenar
+        
+        console.log(8+parseInt('2'))
+        // se usar o + para somar um numero com uma string é nescessario usar o parseint(e a string aqui) se não ele vai concatenar
+
+        //operadores logicos
+        //!= diferente
+        // == igual/equivalente
+        //> maior
+        //< menor
+        //>= maior igual
+        //<= menor igual
+        // === comparar
+
+        console.log(1==1)
+        console.log (1!='1')
+
+        if (1==1)
+        {
+            console.log("estou dentro do if")
+        }else if (2==2){
+            console.log("estou fora do if e dentro do else if")
+        }else {
+            console.log("estou dentro do else")
+        }
+
+        for(i=0; i<5;i++)
+        {
+            console.log("valor de i:" + i)
+        }
+
+        contador = 0
+        while(contador<=10)
+        {
+            contador++
+            
+            if(contador==2)
+            {
+                continue
+            }
+                // o continue mandar pular o laço do momento, utilizado para otimizar tempo
+           
+             if (contador==5)
+             {
+                break
+             }
+                // o break serve para parar o laço de repetição
+
+            console.log("valor de contador:" + contador)
+
+
+        }
+        //funcaotop() tbm pode ser chamado no console dev do navegador. 
+         function funcaotop()
+
+          //alert serve para mandar avisos para o usuario
+          {
+            alert ("minha função funcionou!!")
+
+          }
+          
+          function adicionartexto()
+          {
+            alert("deseja adicionar o texto?")
+            //console.log(document.getElementById('textopersonalizado').innerHTML)
+            //colocando o .innerHtml na frente ele pede para buscar apenas o valor que está tag
+            
+            textoLocal = document.getElementById('textopersonalizado').innerHTML
+            console.log (textoLocal)
+            //document.getElementById a tradução é selecione o elemento atravez do byId, quando ele pega a tag ele tem a opção de personalizar ou capturar as informações.
+
+            document.getElementById('textopersonalizado').innerHTML ="UM TEXTO DO BALACO BACO"
+            //dessa forma o ById está alterando o valor da tag
+          }
+      
+          
+        
+
+    </script>
+
+</body>
+</html>
