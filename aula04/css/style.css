@@ -1,0 +1,41 @@
+
+/* buscar o endereço de onde tirou a fonte */
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap'); */
+
+@font-face {
+    /* configuração para encotrar o endereço da minha fonte e poder usa-la, font-family é o nome que você vai usar para chamar no titulo */
+    font-family:'PoetsenOne' ;
+    src: url('../font/PoetsenOne.ttf');
+}
+
+/* serve para os comandos sejam usados em todas as tags */
+
+*{
+    margin:0;
+}
+/* margin é o espaço na borda da imagem */
+.fundo{
+    /* usar o url para localizar a imagem, se usar só um . você está dizendo onde você está e .. você esta dizendo para voltar para a pasta anterior */
+    background-image: url(../img/sesshomaru-inuyasha.jpg);
+    /* cover serve para centralizar a imagem */
+    background-size:cover;
+    /* background-position: deixar a imagem sempre no centro até quando a janela é diminuida */
+    background-position: center;
+    /* vh: usar 100% da altura, vw: usar 100% da largura */
+    height: 100vh;
+    /* alinhar conteudos no centro */
+    align-content: center;
+}
+.titulo{
+        color: rgb(2, 2, 2);
+        /* text-align alinhar texto */
+         text-align: center;
+         font-size: 50px;
+        /* mudar fonte, se não funcionar uma fonte, o sistema vai pegar a outra do lado e assim por diante */
+        font-family: 'PoetsenOne','DM Serif Display','Bebas','...';
+        /* grossura da fonte, em fontes que tem essa funcionalidade
+        font-weight:100 ; */
+        font-style: italic;
+        /* deitar a fonte */
+}
