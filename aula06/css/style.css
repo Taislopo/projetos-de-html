@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+}
+.container{
+    /* parametros o primeiro 0 é a altura e o segundo 15 a largura da margem interna */
+    padding:0 15px;
+    width: 70vh;
+}
+.grid{
+    /* display: a forma que a gente ve na tela, no caso é do jeito grade(grid) */
+    display: grid;
+    /* gap: espaçamento entre os grid */
+    gap: 10px;
+    /* grid-template-rows: repeat(4, 200px); */
+    
+    /* quando só se quer separa a linha row gap: 30px;*/
+
+    /* quando só se quer separa a coluna column-gap: 50px;*/
+}
+.linha{
+    /*  tem o comando repeat() onde coloca a quantidade e o tamanho do lado ex repeat(4, 400px) e ele repete */
+    grid-template-rows: repeat(4,200px);
+}
+.coluna{
+    /* grid-template-columns: 1fr 1fr 1fr; comando de quantidade de colunas no caso fr é um frame. */
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.coluna-02{
+    grid-template-columns: 1fr 2fr;
+}
+.coluna-03{
+    grid-template-columns: 2fr 1fr;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+
+    margin: 10px;
+
+    text-align: center;
+    align-content: center;
+}
