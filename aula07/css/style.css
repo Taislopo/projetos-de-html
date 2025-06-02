@@ -1,0 +1,90 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"); /*O "@import" sempre em primerio*/
+@font-face {
+    font-family: 'italic';
+    src: url(../font/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+*{
+    margin: 0;
+    font-family:'italic' ;
+}
+.menu-principal>li a{
+    margin: 5px;
+}
+.menu-principal>li a:hover{
+    transition: 1s;
+    background-color: rgb(127, 148, 161);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.cabecalho nav{
+    /* tudo abaixo funciona corretamente graças ao "display:flex"*/ 
+    display: flex;
+    background-color: rgb(222, 222, 222);
+    padding: 5px;
+    /*Os itens são distribuídos uniformemente dentro do contêiner de alinhamento ao longo do eixo principal*/  
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+}
+.navegacao h1{
+    /* grossura da fonte */
+    font-weight: 900; 
+    font-size: 18px;
+}
+.navegacao>ul {
+    list-style: none;
+    display: flex;
+}
+.navegacao>ul a{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+.navegacao>ul i{
+    padding: 5px;
+    font-size: 16px;
+}
+.link-ativo i{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+.banner{
+    height:100vh;
+    background-color: blue;
+}
+.banner>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.produtos{
+    height: 100vh;
+}
+.produtos h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    text-align: center;
+    gap: 10px;
+    padding: 20px 10% 5px 10%;
+}
+.grid-box :hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 1s, box-shadow 1s;
+}
+.box{
+    height: 280px;
+    width: 200px;
+    background-color: blueviolet;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+}
