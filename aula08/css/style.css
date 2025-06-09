@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+/* deixa o scroll da tela mais suave na hora de descer e subir*/
+html{
+    scroll-behavior: smooth;
+}
+section{
+    height:100vh;
+    background-color: tomato;
+}
+
+#Banner{
+    background-color: tomato;
+}
+#Sobre{
+    background-color: cadetblue;
+}
+#saiba-mais{
+    background-color: tomato;
+}
