@@ -1,0 +1,54 @@
+*{
+    margin: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(3, 200px);
+    row-gap: 10px;
+
+    justify-items: center;
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: tomato ;
+    
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+    justify-content: center;
+}
+img{
+    width:100% ;
+    max-width: 1000px;
+    min-width: 800px ;
+}
+
+@media screen and   (max-width:1200px) and (min-width:769px) {
+
+.grid{
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows:repeat(4, 200px);
+}
+
+.box{
+    background-color: darkgreen;
+    transition: 1s;
+}
+}
+/* media screean serve para fazer uma responsividade no caso entamos falanod que a tela no maximo de 768px acontece tal coisa para, para fazer a transição nos pixels tem que mudar secrem e no codigo de cima  */
+@media screen and (max-width:768px){
+ .grid   
+    {
+         grid-template-columns:repeat(3, 1fr);
+         grid-template-rows:repeat(4, 200px);
+    }
+.box {
+    background-color: aqua;
+    transition: 1s;
+}
+}
